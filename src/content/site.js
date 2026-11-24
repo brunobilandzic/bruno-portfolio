@@ -28,6 +28,34 @@ export const repositories = [
     en: 'An application for driving school students, instructors, teachers and examiners.',
     hr: 'Aplikacija za polaznike, instruktore, predavače i ispitivače autoškole.',
   },
+  {
+    title: 'Blockchain Tracker',
+    url: `${person.github}/blockchain_tracker`,
+    technology: 'Next.js',
+    en: 'A web app for tracking Bitcoin transactions and viewing transactions awaiting confirmation in the mempool.',
+    hr: 'Web aplikacija za praćenje Bitcoin transakcija i pregled transakcija koje u mempoolu čekaju potvrdu.',
+  },
+  {
+    title: 'Blog & Social Post Generator',
+    url: `${person.github}/post_statuses_gen`,
+    technology: 'Python',
+    en: 'Scripts that use the OpenAI API to generate blog posts and Facebook updates based on configurable topics.',
+    hr: 'Skripte koje putem OpenAI API-ja generiraju blog članke i objave za Facebook prema zadanim temama.',
+  },
+  {
+    title: 'Learn App',
+    url: `${person.github}/learn-app`,
+    technology: '.NET',
+    en: 'An app for students to track learning tasks and organize their courses, lectures and exams.',
+    hr: 'Aplikacija u kojoj studenti mogu pratiti zadatke za učenje i organizirati kolegije, predavanja i ispite.',
+  },
+  {
+    title: 'Auth Template',
+    url: `${person.github}/auth-template`,
+    technology: 'Next.js',
+    en: 'A Next.js authentication practice project that uses NextAuth.js and MongoDB.',
+    hr: 'Projekt za vježbu autentikacije u Next.js-u uz NextAuth.js i MongoDB.',
+  },
 ];
 
 export const studioProjects = [

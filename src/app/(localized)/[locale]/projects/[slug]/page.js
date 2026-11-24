@@ -42,6 +42,7 @@ export default async function ProjectPage({ params }) {
             <p className="kicker">{data.category}</p>
             <h1>{project.title}</h1>
             <p className="case-intro">{data.intro}</p>
+            {data.demoDescription && <p className="case-demo-description">{data.demoDescription}</p>}
             {(project.demo || project.github) && <div className="actions">
               {project.demo && <a className="button button-primary" href={project.demo}>{t.demo}</a>}
               {project.github && <a className="button" href={project.github}>GitHub</a>}

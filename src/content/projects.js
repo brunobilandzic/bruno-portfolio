@@ -37,11 +37,21 @@ export const projects = [
     slug: 'spomenarapp',
     title: 'SpomenarApp',
     github: `${person.github}/spomenarapp`,
+    demo: 'https://spomenar-public-demo.onrender.com/',
     technologies: ['JavaScript', 'React', 'Express', 'MongoDB', 'Mongoose'],
-    screenshots: [],
+    screenshots: [{
+      src: '/projects/spomenarapp-demo.webp',
+      width: 1440,
+      height: 830,
+      alt: {
+        en: 'A sample spomenar with a question about a favorite memory and example answers.',
+        hr: 'Ogledni spomenar s pitanjem o najdražoj uspomeni i primjerima odgovora.',
+      },
+    }],
     en: {
       category: 'Undergraduate thesis · FESB',
       intro: 'A web application for creating, answering and managing collections of questions.',
+      demoDescription: 'Explore a sample spomenar, answer its questions or create your own collection. Drafts are saved in your browser and you can try everything without an account.',
       context: 'SpomenarApp was developed as my final undergraduate thesis at FESB, University of Split.',
       problem: 'The project gives users a place to organize questions into collections and answer collections shared by other users.',
       features: ['Create and manage question collections', 'Browse collections created by other users', 'Answer questions within a collection'],
@@ -50,6 +60,7 @@ export const projects = [
     hr: {
       category: 'Završni rad · FESB',
       intro: 'Web aplikacija za izradu i upravljanje zbirkama pitanja te odgovaranje na pitanja.',
+      demoDescription: 'Pregledaj ogledni spomenar, odgovori na pitanja ili sastavi vlastitu zbirku. Skice se spremaju u pregledniku, a za isprobavanje ne trebaš račun.',
       context: 'SpomenarApp je nastao kao moj završni rad na FESB-u Sveučilišta u Splitu.',
       problem: 'Projekt korisnicima omogućuje organiziranje pitanja u zbirke i odgovaranje na pitanja iz zbirki drugih korisnika.',
       features: ['Izrada zbirki pitanja i upravljanje njima', 'Pregled zbirki drugih korisnika', 'Odgovaranje na pitanja iz zbirki'],
@@ -58,19 +69,30 @@ export const projects = [
   },
   {
     slug: 'vegme',
-    title: 'Vegme',
+    title: 'VegMe',
     github: `${person.github}/vegme`,
+    demo: 'https://vegme-demo.vercel.app/',
     technologies: ['JavaScript', 'React', 'Node.js', 'MongoDB'],
-    screenshots: [],
+    screenshots: [{
+      src: '/projects/vegme-demo.webp',
+      width: 1440,
+      height: 830,
+      alt: {
+        en: 'VegMe demo homepage with a photo of a meal and a link to browse the catalog.',
+        hr: 'Naslovnica VegMe demoa s fotografijom jela i poveznicom na katalog.',
+      },
+    }],
     en: {
       category: 'Web application',
       intro: 'A web application where cooks list meals and users subscribe on a weekly basis.',
+      demoDescription: 'Browse sample meals and cook profiles, add dishes to the cart and simulate an order without creating an account.',
       features: ['Browse meals and manage weekly orders', 'Create and manage meal listings as a cook', 'Manage users and roles as an administrator'],
       implementation: 'Vegme has a React frontend and a separate Node.js backend that uses MongoDB.',
     },
     hr: {
       category: 'Web aplikacija',
       intro: 'Web aplikacija u kojoj kuhari objavljuju ponudu jela, a korisnici se pretplaćuju na tjednoj razini.',
+      demoDescription: 'Pregledaj oglednu ponudu jela i profile kuhara, dodaj jela u košaricu i isprobaj naručivanje bez otvaranja računa.',
       features: ['Pregled ponude jela i upravljanje tjednim narudžbama', 'Objava i uređivanje ponude jela u ulozi kuhara', 'Upravljanje korisnicima i ulogama u ulozi administratora'],
       implementation: 'Vegme ima korisničko sučelje u Reactu i odvojeni pozadinski dio na Node.js-u koji koristi MongoDB.',
     },

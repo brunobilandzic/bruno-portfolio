@@ -27,8 +27,12 @@ export function ProjectCard({ project, locale }) {
         <p className="kicker">{data.category}</p>
         <h3>{project.title}</h3>
         <p>{data.intro}</p>
-        <a className="button button-small" href={pathFor(locale, project.slug)}
-          aria-label={`${t.caseStudy} · ${project.title}`}>{t.caseStudy}</a>
+        <div className="actions">
+          {project.demo && <a className="button button-small button-primary" href={project.demo}
+            aria-label={`${t.demo} · ${project.title}`}>{t.demo}</a>}
+          <a className="button button-small" href={pathFor(locale, project.slug)}
+            aria-label={`${t.caseStudy} · ${project.title}`}>{t.caseStudy}</a>
+        </div>
       </div>
     </article>
   );

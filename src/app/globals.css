@@ -92,7 +92,8 @@ p { color: var(--muted); line-height: 1.65; }
 .image-symbol::after { content: ""; position: absolute; width: 1rem; height: 1rem; border: 1px solid; left: .12rem; top: .68rem; transform: rotate(45deg); }
 .project-copy { padding: clamp(1.4rem, 3.3vw, 2.6rem); display: flex; flex: 1; flex-direction: column; gap: .65rem; justify-content: center; }
 .project-copy h3 { font-size: clamp(1.6rem, 3vw, 2.45rem); letter-spacing: -.055em; font-weight: 650; }
-.project-copy .button { margin-top: .5rem; }
+.project-copy .actions { margin-top: .5rem; }
+.project-card:not(.card-fvtracker) .project-copy .actions { margin-top: auto; padding-top: .5rem; }
 .repo-section { margin-top: 3.2rem; }
 .section-heading { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: 1rem; margin-bottom: .8rem; }
 .section-heading h3, .education-list h3, .case-details h2, .case-next h2 { font-size: 1.35rem; font-weight: 630; letter-spacing: -.025em; }
@@ -143,6 +144,7 @@ p { color: var(--muted); line-height: 1.65; }
 .back { display: inline-flex; margin-bottom: 2.4rem; font-size: .875rem; }
 .case-header h1 { font-size: clamp(2.65rem, 8.5vw, 7rem); overflow-wrap: anywhere; margin-block: .6rem .85rem; }
 .case-intro { font-size: clamp(1.125rem, 2.5vw, 1.55rem); max-width: 43rem; }
+.case-demo-description { max-width: 43rem; margin-top: .65rem; }
 .case-gallery { display: grid; grid-template-columns: minmax(0, 1fr); gap: 1rem; margin-block: clamp(2rem, 5vw, 4rem); }
 .case-gallery .project-visual { border: 1px solid var(--line); border-radius: .85rem; aspect-ratio: 2.2; }
 .case-gallery .project-visual:has(img) { aspect-ratio: auto; }
